@@ -4,16 +4,14 @@ public class Fact {
     public static void main(String[] arg)
     {
         Scanner sc= new Scanner(System.in);
-        int number;
         System.out.println("enter the number");
-        number = sc.nextInt();
-
-
-        for (int i = number; i >= 1; i--) {
-            number *= i;
+        int number = sc.nextInt();
+        int fact=1;
+        for (int i=1; i<=number; i++){
+            fact *= i;
         }
+        System.out.println("factorial is " +fact);
 
-        System.out.printf("Sum of numbers from %d to 1 is:", number);
 
 
     }
